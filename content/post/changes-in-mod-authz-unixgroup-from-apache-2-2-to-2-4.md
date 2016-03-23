@@ -7,7 +7,7 @@ title = "Changes in mod_authz_unixgroup from Apache 2.2 to 2.4"
 
 mod_authz_unixgroup is an Apache module that can be used to allow members of Unix groups on the server to access restricted content with their Unix user credentials. These groups are defined in a <a href="https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html#require" target="_blank">Require</a> directive and therefore it can be used with essentially any <a href="https://httpd.apache.org/docs/current/mod/mod_authn_core.html#authtype" target="_blank">AuthType</a>. We utilize this extensively at my place of work, as all our users and groups are stored in our Active Directory, which are then mapped to Unix users and groups on all our machines via pam_ldap.
 
-When switching from Apache 2.2 to 2.4, I experienced some issues with compatibility with our current implementation of the module. Under 2.2, the module had to be initialized with 'AuthzUnixgroup on' and the require directive was 'require group mygroup'. The whole configuration looked something like this:
+When switching from Apache 2.2 to 2.4, I experienced some issues with compatibility with our current implementation of the module. Under 2.2, the module had to be initialized with 'AuthzUnixgroup On' and the Require directive was 'Require group mygroup'. The whole configuration looked something like this:
 
 {{< highlight apache >}}
 AuthType Basic
