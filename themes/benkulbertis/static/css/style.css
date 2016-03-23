@@ -44,6 +44,16 @@ a {
 a:hover {
   color: #fff;
 }
+blockquote {
+  border-left: 1px dotted #ddd;
+  padding: 3px 5px 5px 15px;
+  background-color: #272822;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+blockquote p {
+  margin: 0 !important;
+}
 ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
@@ -244,4 +254,3 @@ nav li {
     font-size: 0.95vw;
   }
 }
-
