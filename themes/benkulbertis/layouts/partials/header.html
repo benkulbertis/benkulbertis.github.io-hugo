@@ -1,0 +1,8 @@
+<header>
+    <div id="headers">
+        <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+        <h2>{{ .Site.Params.Description }}</h2>
+        <h2>{{ .Site.Params.Location }}</h2>
+    </div>
+    {{ partial nav.html . }}
+</header>

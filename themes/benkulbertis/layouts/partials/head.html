@@ -1,0 +1,24 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }} - {{site.name}}{% else %}{{site.name}} - {{ site.description }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ .Site.Params.MetaDescription }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+    <!-- FONTS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+	
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/css/syntax.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/style.css' | prepend: site.baseurl }}">
+
+    <!-- JS -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/history.js/1.8/native.history.min.js"></script>
+    <script type="text/javascript" src="{{ '/main.js' | prepend: site.baseurl }}"></script>
+    <!-- Twitter button script -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</head>
