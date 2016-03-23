@@ -1,3 +1,15 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://ben.kulbertis.org"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Ben Kulbertis"
+
+[permalinks]
+  post = "/:year/:month/:title"
+
+[params]
+    Description = "Full Stack Web Developer and Technology Enthusiast"
+    MetaDescription = "Hey! I'm Ben. I'm a young web developer living in Salt Lake City, Utah. I'm currently interesting in writing web applications using Ember.js and Ruby on Rails."
+    Location = "Salt Lake City, Utah, USA"
+    [params.authors]
+      [params.authors.Ben]
+        "firstName" = "Ben"
+        "lastName" = "Kulbertis"

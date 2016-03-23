@@ -1,0 +1,188 @@
+@font-face
+  font-family:'Champagne';src:url('/fonts/cac_champagne-webfont.eot');src:url('/fonts/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),url('/fonts/cac_champagne-webfont.woff') format('woff'),url('/fonts/cac_champagne-webfont.ttf') format('truetype'),url('/fonts/cac_champagne-webfont.svg#CACChampagneRegular') format('svg');
+  font-weight normal
+  font-style normal
+  -webkit-font-smoothing antialiased
+
+$duration = 500ms
+
+*
+  margin 0
+  padding 0
+
+html, body
+  background-color #222
+  color white
+  font-family Lato, sans-serif
+
+h1, h2, h3, h4
+  font-family Oswald, sans-serif
+  margin-bottom 5px
+  color #ddd
+  text-shadow: 1px 1px 0 #444
+
+h1
+  font-size 36px
+h2
+  font-size 32px
+h3
+  font-size 28px
+h4
+  font-size 22px
+
+a
+  color #ddd
+  outline: none
+a:hover
+  color #fff
+
+::-webkit-scrollbar
+  width 12px
+  height 12px
+
+::-webkit-scrollbar-thumb
+  border-radius 5px
+  -webkit-box-shadow inset 0 0 6px rgba(0, 0, 0, .3)
+  background-color rgba(100, 100, 100, 0.7)
+
+.bold
+  font-weight bold
+
+.highlight
+  border-left 1px dotted #dddddd
+  padding 3px 0 5px 15px
+  margin-bottom 20px
+  background-color #343434
+  overflow auto
+
+section.post
+  clear both
+
+section.post p
+  line-height 26px
+  margin-bottom 20px
+
+#index
+  clear both
+  font-size 16px
+  letter-spacing 1px
+  line-height 4em
+  margin 0
+  img
+    vertical-align middle
+  a
+    font-weight bold
+
+#headers
+  font-family Oswald, sans-serif
+  border-bottom 1px dotted #dddddd
+  padding-bottom 20px
+  margin-bottom 20px
+  *
+    margin 0
+  h1 > a
+    opacity 1
+    color #ddd
+    text-decoration none
+    font 70px Champagne, serif
+    letter-spacing 1px
+
+nav li
+  list-style none
+  margin-bottom 5px
+
+#social
+  margin-top 20px
+  padding-top 20px
+  border-top 1px dotted #dddddd
+  display none
+
+.twitter-follow-button
+  display block
+  float left
+
+.github-follow-button
+  display block
+  float right
+
+@media (max-width: 1100px)
+  body
+    margin 10px 20px 0
+
+  header
+    padding-bottom 20px
+    margin-bottom 20px
+    border-bottom 1px dotted #dddddd
+
+  section.post
+    margin-top 20px
+
+@media (min-width: 1100px)
+
+  html, body
+    overflow hidden
+
+  h1
+    font-size 3.2vw
+  h2
+    font-size 1.6vw
+  h3
+    font-size 1.6vw
+  h4
+    font-size 1.3vw
+
+  header
+    position absolute
+    left 20px
+    top 15px
+
+  #headers h1 > a
+    font-size 5vw
+    line-height 4.5vw
+
+  section.post
+    position absolute
+    left 40%
+    width 55%
+    height 95%
+    padding 0 20px
+    margin 20px 0
+    overflow-y auto
+    overflow-x hidden
+
+  #index
+    img:hover
+      animation tilt 50ms ease-in 0 forwards
+      -webkit-animation tilt 50ms ease-in 0 forwards
+      -moz-animation tilt 50ms ease-in none forwards
+
+  nav
+    font-size 1.2vw
+
+  @keyframes tilt {
+    from {
+      -moz-transform rotate(0deg)
+      -webkit-transform rotate(0deg)
+      -o-transform rotate(0deg)
+      transform rotate(0deg)
+    }
+    to {
+      $angle = 3deg
+      -moz-transform rotate($angle)
+      -webkit-transform rotate($angle)
+      -o-transform rotate($angle)
+      transform rotate($angle)
+    }
+  }
+
+@media (min-width: 1300px)
+
+  nav
+    font-size 1.1vw
+
+@media (min-width: 1600px)
+
+  h3
+    font-size 1.5vw
+  nav
+    font-size 0.95vw

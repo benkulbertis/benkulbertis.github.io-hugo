@@ -1,0 +1,5 @@
+{{ partial "header.html" . }}
+<h3 id="post-title">{{ .Title }}</h3>
+<p class="meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+{{ .Content }}
+{{ partial "footer.html" . }}

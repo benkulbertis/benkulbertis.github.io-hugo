@@ -1,8 +1,49 @@
-<header>
-    <div id="headers">
-        <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-        <h2>{{ .Site.Params.Description }}</h2>
-        <h2>{{ .Site.Params.Location }}</h2>
-    </div>
-    {{ partial nav.html . }}
-</header>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ if ne .URL "/" }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }} - {{ .Site.Params.Description }}{{ end }}</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="{{ .Site.Params.MetaDescription }}">
+        <link rel="canonical" href="{{ .Permalink }}">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+        <!-- FONTS -->
+        <link href="//fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+
+        <!-- CSS -->
+        <!--link rel="stylesheet" href="/css/syntax.css"-->
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- JS -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/history.js/1.8/native.history.min.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
+        <!-- Twitter button script -->
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </head>
+    <body>
+        <header>
+            <div id="headers">
+                <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+                <h2>{{ .Site.Params.Description }}</h2>
+                <h2>{{ .Site.Params.Location }}</h2>
+            </div>
+            <nav>
+                <h4 id="blog-links-title">Write-ups</h4>
+                <ul class="posts">
+                    {{ range where .Site.Pages "Section" "post" }}
+                        {{ .Render "li" }}
+                    {{ end }}
+                </ul>
+
+                <div id="social">
+                    <a href="https://twitter.com/benkulbertis" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @benkulbertis</a>
+                    <iframe src="http://ghbtns.com/github-btn.html?user=benkulbertis&type=follow&count=true"
+                            allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20" class="github-follow-button"></iframe>
+                </div>
+            </nav>
+        </header>
+        <section class="post">
