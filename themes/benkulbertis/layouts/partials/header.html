@@ -3,9 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ if ne .URL "/" }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }} - {{ .Site.Params.Description }}{{ end }}</title>
-        <meta name="viewport" content="width=device-width">
+        {{ .Hugo.Generator }}
+	<meta name="viewport" content="width=device-width">
         <meta name="description" content="{{ .Site.Params.MetaDescription }}">
+
+	<title>{{ if ne .URL "/" }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }} - {{ .Site.Params.Description }}{{ end }}</title>
+
         <link rel="canonical" href="{{ .Permalink }}">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
 
@@ -14,7 +17,6 @@
         <link href="//fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
 
         <!-- CSS -->
-        <!--link rel="stylesheet" href="/css/syntax.css"-->
         <link rel="stylesheet" href="/css/style.css">
 
         <!-- JS -->
