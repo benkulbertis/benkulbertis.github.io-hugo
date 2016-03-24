@@ -1,5 +1,5 @@
 +++
-date = "2011-10-29T19:19:00-05:00"
+date = "2011-10-29T19:19:00-04:00"
 draft = false
 title = "Synchronizing A MySQL Database with Git and Git Hooks"
 
