@@ -11,7 +11,7 @@ When switching from Apache 2.2 to 2.4, I experienced some issues with compatibil
 
 {{< highlight apache >}}
 AuthType Basic
-AuthzUnixgroup on
+AuthzUnixgroup On
 Require group mygroup
 {{< /highlight >}}
 
