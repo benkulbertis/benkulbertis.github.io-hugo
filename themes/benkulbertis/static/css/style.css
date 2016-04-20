@@ -96,8 +96,8 @@ section.post p {
 #headers {
   font-family: Oswald, sans-serif;
   border-bottom: 1px dotted #ddd;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 #headers * {
   margin: 0;
@@ -114,18 +114,19 @@ nav li {
   margin-bottom: 5px;
 }
 #social {
-  margin-top: 20px;
-  padding-top: 20px;
+  margin-top: 17px;
+  padding-top: 10px;
   border-top: 1px dotted #ddd;
   display: none;
 }
-.twitter-follow-button {
-  display: block;
-  float: left;
+#social a {
+  margin-right: 10px;
+  text-decoration: none;
 }
-.github-follow-button {
-  display: block;
-  float: right;
+#social a:hover {
+  position: relative;
+  top: 1px;
+  transition: transform 300ms ease-in-out;
 }
 @media (max-width: 1100px) {
   body {
