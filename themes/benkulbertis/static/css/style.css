@@ -38,11 +38,11 @@ h4 {
   font-size: 22px;
 }
 a {
-  color: #ddd;
+  color: #66d9ef;
   outline: none;
 }
 a:hover {
-  color: #fff;
+  color: #caff5d;
 }
 blockquote {
   border-left: 1px dotted #ddd;
