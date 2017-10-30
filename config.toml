@@ -6,8 +6,8 @@ title = "Ben Kulbertis"
   post = "/:year/:month/:filename"
 
 [params]
-    Description = "Full Stack Web Developer and Technology Enthusiast"
-    MetaDescription = "Hey! I'm Ben. I'm a young web developer living in Salt Lake City, Utah. I'm currently interesting in writing web applications using Ember.js and Ruby on Rails."
+    Description = "Deployment Automation Engineer and Systems Administrator"
+    MetaDescription = "Hey! I'm Ben. I'm a deployment automation engineer living in Salt Lake City, Utah."
     Location = "Salt Lake City, Utah, USA"
     [params.authors]
       [params.authors.Ben]
