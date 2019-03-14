@@ -42,7 +42,7 @@
             <nav>
                 <h4 id="blog-links-title">Write-ups</h4>
                 <ul class="posts">
-                    {{ range where .Site.Pages "Section" "post" }}
+                    {{ range where .Site.RegularPages "Section" "post" }}
                         {{ .Render "li" }}
                     {{ end }}
                 </ul>
