@@ -112,6 +112,10 @@ section.post p {
   font: 70px Champagne, serif;
   letter-spacing: 1px;
 }
+#publication-links-title {
+  border-top: 1px dotted #ddd;
+  margin-top: 10px;
+}
 nav li {
   list-style: none;
   margin-bottom: 5px;
