@@ -40,16 +40,14 @@
                 <h2>{{ .Site.Params.Location }}</h2>
             </div>
             <nav>
-                <h4 id="blog-links-title">Write-ups</h4>
+		<h4 id="publication-links-title">Publications</h4>
+                <ul>                                                                                                                            <li><a href='https://dl.acm.org/citation.cfm?doid=3219104.3219144'>Building the SLATE Platform</a> - PEARC '18</li>                                                                                                                     </ul>
+                <h4 id="blog-links-title">(Old) Write-ups</h4>
                 <ul class="posts">
                     {{ range where .Site.RegularPages "Section" "post" }}
                         {{ .Render "li" }}
                     {{ end }}
                 </ul>
-		<h4 id="publication-links-title">Publications</h4>
-		<ul>
-                    <li><a href='https://dl.acm.org/citation.cfm?doid=3219104.3219144'>Building the SLATE Platform</a> - PEARC '18</li>
-		</ul>
 
                 <div id="social">
                     <a href="https://github.com/benkulbertis">
