@@ -139,6 +139,10 @@ nav li {
   top: 1px;
   transition: transform 300ms ease-in-out;
 }
+#social #linkedin {
+  height: 32px;
+  width: 32px;
+}
 @media (max-width: 1100px) {
   body {
     margin: 10px 20px 0;
