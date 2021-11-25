@@ -7,8 +7,8 @@ title = "Ben Kulbertis"
 
 [params]
     Description = "Software Dev / Ops Automation"
-    MetaDescription = "Hey! I'm Ben. I automate video operations at Amazon IVS/Twitch in Irvine, CA."
-    Location = "Irvine, CA, USA"
+    MetaDescription = "Hey! I'm Ben. I automate video operations at Amazon IVS/Twitch in Irvine, California."
+    Location = "Irvine, California, USA"
     [params.authors]
       [params.authors.Ben]
         "firstName" = "Ben"
